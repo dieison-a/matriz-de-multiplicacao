@@ -1,0 +1,68 @@
+﻿<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Monte uma tabela de multiplicação a partir de um número e escolha quantas linhas exibir.">
+    <title>
+      Mesa de Tabuadas
+    </title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="app.js">
+    </script>
+  </head>
+  <body>
+    <header class="topo">
+      <a class="marca" href="index.html">
+        PROJETO
+        <span>
+          ·
+        </span>
+        Mesa
+      </a>
+      <span class="selo">
+        DEMONSTRAÇÃO LOCAL
+      </span>
+    </header>
+    <main>
+      <section class="abertura">
+        <p class="sobretitulo">
+          ESTUDO INTERATIVO · JAVASCRIPT
+        </p>
+        <h1>
+          Mesa de Tabuadas
+        </h1>
+        <p class="introducao">
+          Monte uma tabela de multiplicação a partir de um número e escolha quantas linhas exibir.
+        </p>
+      </section>
+      <section class="painel">
+        <form id="formulario" class="grade">
+          <div class="campo">
+            <label for="numero">
+              Número base
+            </label>
+            <input id="numero" type="number" min="-50" max="50" value="7">
+          </div>
+          <div class="campo">
+            <label for="quantidade">
+              Linhas (1 a 12)
+            </label>
+            <input id="quantidade" type="number" min="1" max="12" value="10">
+          </div>
+          <div class="acoes">
+            <button>
+              Gerar tabuada
+            </button>
+          </div>
+        </form>
+        <div id="resultado" class="grade" aria-live="polite">
+        </div>
+      </section>
+    </main>
+    <footer>
+      Projeto demonstrativo independente · dados fictícios · sem serviços externos
+    </footer>
+  </body>
+</html>
+
